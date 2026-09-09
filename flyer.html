@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Flyer SafeRoute</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .flyer {
+            width: 380px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+            text-align: center;
+            border: 2px solid #0056b3;
+        }
+        .header {
+            background: linear-gradient(135deg, #0056b3, #002d62);
+            color: white;
+            padding: 30px 20px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        .content {
+            padding: 25px 20px;
+        }
+        .icons {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .message {
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .qr-container {
+            background: #f8f9fa;
+            border: 3px dashed #0056b3;
+            border-radius: 15px;
+            padding: 15px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .qr-container img {
+            width: 180px;
+            height: 180px;
+            display: block;
+        }
+        .call-to-action {
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .footer {
+            background: #e9ecef;
+            padding: 12px;
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flyer">
+    <div class="header">
+        <h1>Projeto SafeRoute</h1>
+        <p>UNICID Tatuapé</p>
+    </div>
+    
+    <div class="content">
+        <div class="icons">🚶‍♂️ 🚌 🚆 🚇</div>
+        
+        <p class="message">
+            Seja você <strong>pedestre</strong> ou usuário de <strong>ônibus, trem e metrô</strong>, sua resposta leva menos de 2 minutos e fortalece nosso projeto acadêmico!
+        </p>
+
+        <div class="qr-container">
+            <!-- Substitua a imagem abaixo pelo caminho do seu QR Code -->
+            <img src="Design sem nome.png" alt="QR Code SafeRoute">
+        </div>
+
+        <p class="call-to-action">
+            Aponte a câmera e ajude a mapear a segurança dos trajetos na região!
+        </p>
+    </div>
+
+    <div class="footer">
+        Pesquisa Acadêmica | ADS - UNICID
+    </div>
+</div>
+
+</body>
+</html>
