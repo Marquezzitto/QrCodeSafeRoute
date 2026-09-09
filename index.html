@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flyer SafeRoute - UNICID</title>
-    <!-- Biblioteca leve para gerar QR Code direto via JavaScript (zero erro 404) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -68,9 +66,10 @@
             display: inline-block;
             margin-bottom: 15px;
         }
-        #qrcode img, #qrcode canvas {
+        .qr-container img {
+            width: 180px;
+            height: 180px;
             display: block;
-            margin: 0 auto;
         }
         .call-to-action {
             font-weight: bold;
@@ -105,8 +104,8 @@
         </p>
 
         <div class="qr-container">
-            <!-- Container onde o JavaScript vai desenhar o QR Code -->
-            <div id="qrcode"></div>
+            <!-- Pega a imagem 'Design sem nome.png' convertendo espaços para o padrão web -->
+            <img src="Design%20sem%20nome.png" alt="QR Code SafeRoute">
         </div>
 
         <p class="call-to-action">
@@ -118,18 +117,6 @@
         Pesquisa Acadêmica | ADS - UNICID
     </div>
 </div>
-
-<script>
-    // Gera o QR Code direto no navegador no link de resposta pública (viewform)
-    new QRCode(document.getElementById("qrcode"), {
-        text: "https://docs.google.com/forms/d/e/1FAIpQLScUuRu_kzfygSa4jCEV5y-TaUGt3qZXHtqzr4aMo5Twy4/viewform",
-        width: 180,
-        height: 180,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
-</script>
 
 </body>
 </html>
