@@ -65,16 +65,37 @@
             padding: 15px;
             display: inline-block;
             margin-bottom: 15px;
+            transition: transform 0.2s ease;
+        }
+        .qr-container:hover {
+            transform: scale(1.02);
         }
         .qr-container img {
             width: 180px;
             height: 180px;
             display: block;
         }
+        .btn-link {
+            display: block;
+            background-color: #0056b3;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin: 15px 0 20px 0;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 10px rgba(0, 86, 179, 0.25);
+        }
+        .btn-link:hover {
+            background-color: #003d80;
+            transform: translateY(-2px);
+        }
         .call-to-action {
             font-weight: bold;
             color: #0056b3;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             padding: 0 10px;
@@ -103,13 +124,18 @@
             Seja você <strong>pedestre</strong> ou usuário de <strong>ônibus, trem e metrô</strong>, sua resposta leva menos de 2 minutos e fortalece nosso projeto acadêmico!
         </p>
 
-        <div class="qr-container">
-            <!-- Pega a imagem 'Design sem nome.png' convertendo espaços para o padrão web -->
+        <!-- QR Code como link clicável -->
+        <a href="https://docs.google.com/forms/d/1UuRu_kzfygSa4jCEV5y-TaUGt3qZXHtqzr4aMo5Twy4/edit" target="_blank" class="qr-container" title="Clique para abrir o formulário">
             <img src="Design%20sem%20nome.png" alt="QR Code SafeRoute">
-        </div>
+        </a>
+
+        <!-- Botão direto para o formulário -->
+        <a href="https://docs.google.com/forms/d/1UuRu_kzfygSa4jCEV5y-TaUGt3qZXHtqzr4aMo5Twy4/edit" target="_blank" class="btn-link">
+            📝 Responder Formulário Direto
+        </a>
 
         <p class="call-to-action">
-            Aponte a câmera do celular e ajude a mapear a segurança dos trajetos na região!
+            Aponte a câmera ou clique no botão acima!
         </p>
     </div>
 
